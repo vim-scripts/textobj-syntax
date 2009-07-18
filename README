@@ -1,0 +1,25 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=2716
+
+*textobj-syntax* is a Vim plugin to provide |text-objects| to select one or
+more items which are syntax highlighted.
+
+For example, if you edit the following line in your vimrc, characters which
+are underlined with "~" are syntax highlighted.
+
+	nnoremap <silent> ql  :<C-u>clist<Return>
+	~~~~~~~~ ~~~~~~~~      ~~~~~     ~~~~~~~~
+
+So |<Plug>(textobj-syntax-a)| and |<Plug>(textobj-syntax-i)| (which are mapped
+from  |ay| and |iy| by default) select one of the underlined items if the
+cursor is located at the one of them.
+
+
+Requirements:
+- Vim 7.2 or later
+- |textobj-user| 0.3.8 or later (vimscript#2100)
+
+Latest version:
+http://github.com/kana/vim-textobj-syntax
+
+Document in HTML format:
+http://kana.github.com/config/vim/textobj-syntax.html
